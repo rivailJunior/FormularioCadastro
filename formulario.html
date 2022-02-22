@@ -10,50 +10,44 @@
 <body>
 
     <header id="cabecalho">
-        <h1>Cadastro de Jogadores</h1>
+        <h1>Cadastro de Pessoa Física</h1>
     </header>
+    <p>
+        Prezado cliente preencha todos os campos abaixo, assim que finalizar o seu cadastro você receberá um email para confirmar seu cadastro. Caso não receba nenhum email, favor entrar em contato através do e-mail: <a href="https://github.com/Martins-Alonso">https://github.com/Martins-Alonso</a>
+    </p> <br>
     <section>
-        <div id="cadastro">
-            <h5 id="inputs">
-                Digite o seu nome <br>
-                <input type="text" placeholder="Digite seu nome"> <br>
-                Qual é seu E-mail ? <br>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail"> <br>
-                Data de Nascimento <br>
-                <input type="date" name="nasc" id="nasc"> <br>
-                Qual é seu time do Coração ? <br>
-                <select>
-                    <option>América Mg</option>
-                    <option>Athletico Pr</option>
-                    <option>Atlético Go</option>
-                    <option>Atlético Mg</option>
-                    <option>Avaí</option>
-                    <option>Botafogo</option>
-                    <option>Ceará Sc</option>
-                    <option>Corinthians</option>
-                    <option>Coritiba</option>
-                    <option>Cuibá</option>
-                    <option>Flamengo</option>
-                    <option>Fluminense</option>
-                    <option>Fortaleza</option>
-                    <option>Goiás</option>
-                    <option>Internacional</option>
-                    <option>Juventude</option>
-                    <option>Bragantino</option>
-                    <option>Palmeiras</option>
-                    <option>Santos</option>
-                    <option>São Paulo</option>
-                </select> <br>
-                
-
-                
-            </h5>
+        <div class="cadastro">
+            <h3>Dados para Acesso </h3>
+            <label for="">
+                    Nome completo:<br>
+                    <input type="text" name="" id="nomecompleto" size="50px"> <br>
+                    E-mail:<br>
+                    <input type="email" id="email" size="50px"> <br>
+                    Confirme seu E-mail:<br>
+                    <input type="email" id="email" size="50px"> <br>
+                    Apelido: <br>
+                    <input type="text" placeholder="Digite seu nome de usuário" size="50px"> <br>
+                    Senha: <br>
+                    <input type="password" id="senha" size="50px" maxlength="10"> <br>
+                    Confirme sua Senha: <br>
+                    <input type="password" id="senha" size="50px" maxlength="10">
+                       
+            </label>
             
-
-        </div>
-
-        <div>
-
+        </div>   
+        
+        <div class="cadastro" >
+            <h3>Endereço Residencial</h3>
+            <label for="">
+                <p>
+                    Cep <br>
+                    <input type="number" id="cep" size="10px">
+                </p>
+                <p>
+                    Endereço <br>
+                    <input type="text" id="endereco" size="50px">
+                </p>
+            </label>
         </div>
 
         <footer>
