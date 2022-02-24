@@ -10,48 +10,90 @@
 <body>
 
     <header id="cabecalho">
+    <!--Aqui eu queria por um fieldset, mas não gostei do resultado visual-->
         <h1>Cadastro de Pessoa Física</h1>
+    
     </header>
-    <p>
-        Prezado cliente preencha todos os campos abaixo, assim que finalizar o seu cadastro você receberá um email para confirmar seu cadastro. Caso não receba nenhum email, favor entrar em contato através do e-mail: <a href="https://github.com/Martins-Alonso">https://github.com/Martins-Alonso</a>
-    </p> <br>
+
+<main>
     <section>
         <div class="cadastro">
             <h3>Dados para Acesso </h3>
-            <label for="">
+            <span> <!--Fiquei na dúvida entre label e span-->
                     Nome completo:<br>
-                    <input type="text" name="" id="nomecompleto" size="50px"> <br>
+                    <input type="text" class="redondo" id="nomecompleto" size="40px" placeholder="Digite seu nome completo" > <br>
+                    Nome para Login: <br>
+                    <input type="text" class="redondo" placeholder="Digite seu nome de usuário" size="40px" > <br>
                     E-mail:<br>
-                    <input type="email" id="email" size="50px"> <br>
+                    <input type="email" class="redondo" id="email" size="40px" placeholder="Digite seu E-mail"> <br>
                     Confirme seu E-mail:<br>
-                    <input type="email" id="email" size="50px"> <br>
-                    Apelido: <br>
-                    <input type="text" placeholder="Digite seu nome de usuário" size="50px"> <br>
+                    <input type="email" class="redondo" id="email" size="40px" placeholder="Confirme seu E-mail"> <br>
                     Senha: <br>
-                    <input type="password" id="senha" size="50px" maxlength="10"> <br>
+                    <input type="password" class="redondo" id="senha" size="40px" maxlength="10" placeholder="Crie uma Senha">  <br>
                     Confirme sua Senha: <br>
-                    <input type="password" id="senha" size="50px" maxlength="10">
-                       
-            </label>
-            
+                    <input type="password" class="redondo" id="senha" size="40px" maxlength="10" placeholder="Confirme Sua Senha">
+            </span>              
         </div>   
         
         <div class="cadastro" >
             <h3>Endereço Residencial</h3>
-            <label for="">
-                <p>
-                    Cep <br>
-                    <input type="number" id="cep" size="10px">
-                </p>
-                <p>
-                    Endereço <br>
-                    <input type="text" id="endereco" size="50px">
-                </p>
-            </label>
+
+            <span>
+                Digite seu Cep: <br>
+                <input type="number" class="redondo" id="cep" maxlength="10"> <br> <!--Aqui eu tentei colocar um size, mas não obtive o resultado esperado-->
+                Logradouro: <br>
+                <input type="text" class="redondo" id="rua" size="40px"> <br>
+                Complemento: <br>
+                <input type="text" class="redondo" id="Complemento" size="40px"> <br>
+                Estado de Nascimento: <br>
+                <select name="estado" id="estado" class="redondo">
+                    <option value="Ac">Acre</option>
+                    <option value="Al">Alagoas</option>
+                    <option value="Ap">Amapá</option>
+                    <option value="Am">Amazonas</option>
+                    <option value="Ba">Bahia</option>
+                    <option value="Ce">Ceará</option>
+                    <option value="Df">Distrito Federal</option>
+                    <option value="Es">Espírito Santo</option>
+                    <option value="Go">Goiás</option>
+                    <option value="Ma">Maranhão</option>
+                    <option value="Mt">Mato Grosso</option>
+                    <option value="Ms">Mato Grosso do Sul</option>
+                    <option value="Mg">Minas Gerais</option>
+                    <option value="Pa">Pará</option>
+                    <option value="Pb">Paraíba</option>
+                    <option value="Pr">Paraná</option>
+                    <option value="Pe">Pernanbuco</option>
+                    <option value="Pi">Piauí</option>
+                    <option value="Rj">Rio de janeiro</option>
+                    <option value="Rn">Rio Grande do Norte</option>
+                    <option value="Rs">Rio Grande do Sul</option>
+                    <option value="Ro">Rondônia</option>
+                    <option value="Rr">Roraima</option>
+                    <option value="Sc">Santa Catarina</option>
+                    <option value="Sp">São Paulo</option>
+                    <option value="Se">Sergipe</option>
+                    <option value="To">Tocantins</option>
+                </select>               
+            </span>        
+        </div><br>
+
+        <div id="confirmar">
+            <input type="button" id="botao" value="Enviar" onclick="enviar()">
         </div>
 
-        <footer>
+        <section id="">
+            <div>
+                <select class="redondo" id="selecao" size="10">
 
+                </select>
+            </div>
+        </section>
+</main>
+        <footer>
+            <p id="final">
+                &copy; Criado Por Alonso Martins 
+            </p>
         </footer>
     </section>
     <script src="conexao.js"></script>
