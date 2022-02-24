@@ -1,2 +1,2 @@
 # FormularioCadastro
- Formulário de cadastro de pessoa física com Javascript, Html e Css
+ Formulário de cadastro com Javascript, Html e Css.
