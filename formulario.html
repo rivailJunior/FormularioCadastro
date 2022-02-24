@@ -19,20 +19,21 @@
     <section>
         <div class="cadastro">
             <h3>Dados para Acesso </h3>
-            <span> <!--Fiquei na dúvida entre label e span-->
+            <form id="registerForm" method="post" onsubmit="return getFormValues(event)"> <!--Fiquei na dúvida entre label e span-->
                     Nome completo:<br>
-                    <input type="text" class="redondo" id="nomecompleto" size="40px" placeholder="Digite seu nome completo" > <br>
+                    <input type="text" class="redondo" name="nomecompleto" id="nomecompleto" size="40px" placeholder="Digite seu nome completo" > <br>
                     Nome para Login: <br>
                     <input type="text" class="redondo" placeholder="Digite seu nome de usuário" size="40px" > <br>
-                    E-mail:<br>
+                    <!-- E-mail:<br>
                     <input type="email" class="redondo" id="email" size="40px" placeholder="Digite seu E-mail"> <br>
                     Confirme seu E-mail:<br>
                     <input type="email" class="redondo" id="email" size="40px" placeholder="Confirme seu E-mail"> <br>
                     Senha: <br>
                     <input type="password" class="redondo" id="senha" size="40px" maxlength="10" placeholder="Crie uma Senha">  <br>
-                    Confirme sua Senha: <br>
-                    <input type="password" class="redondo" id="senha" size="40px" maxlength="10" placeholder="Confirme Sua Senha">
-            </span>              
+                    Confirme sua Senha: <br> -->
+                    <!-- <input type="password" class="redondo" id="senha" size="40px" maxlength="10" placeholder="Confirme Sua Senha"> -->
+                    <button type="submit">Enviar</button>
+            </form>              
         </div>   
         
         <div class="cadastro" >
@@ -96,6 +97,6 @@
             </p>
         </footer>
     </section>
-    <script src="conexao.js"></script>
+    <script src="onLoad.js"></script>
 </body>
 </html>
